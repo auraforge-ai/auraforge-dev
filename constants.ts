@@ -20,8 +20,10 @@ export const PROJECTS: Project[] = [
     title: 'Gemini Facets',
     description: 'An innovative chatbot application with reactive characters that respond and adapt to your prompts for a deeply personal experience.',
     imageUrl: 'https://picsum.photos/seed/personal-chatbot-ai/800/600',
-    projectUrl: 'https://gemini-facets-94149386363.us-west1.run.app/',
+    projectUrl: '#',
+    liveUrl: 'https://gemini-facets-94149386363.us-west1.run.app/',
     isLive: true,
+    slug: 'gemini-facets',
   },
   {
     title: 'CLI With Gemini',

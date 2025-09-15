@@ -5,4 +5,6 @@ export interface Project {
   imageUrl: string;
   projectUrl: string;
   isLive?: boolean;
+  liveUrl?: string;
+  slug?: string;
 }
