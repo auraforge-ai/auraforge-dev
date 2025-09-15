@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuraForge | Human Ingenuity, Supercharged by AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#0a0a0f',
+              'brand-surface': '#1a1a24',
+              'brand-primary': '#8a42f4',
+              'brand-secondary': '#4f46e5',
+              'brand-text': '#e0e0e0',
+              'brand-text-muted': '#a0a0a0',
+            },
+            animation: {
+              'gradient-bg': 'gradient-bg 15s ease infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'card-glow': 'card-glow 4s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              'gradient-bg': {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'top center',
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'bottom center',
+                },
+              },
+              'glow': {
+                'from': { 
+                  'text-shadow': '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8a42f4, 0 0 20px #8a42f4, 0 0 25px #8a42f4, 0 0 30px #8a42f4, 0 0 35px #8a42f4',
+                  'box-shadow': '0 0 5px #fff, 0 0 10px #8a42f4, 0 0 15px #8a42f4, 0 0 20px #8a42f4'
+                },
+                'to': { 
+                  'text-shadow': '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4f46e5, 0 0 40px #4f46e5, 0 0 50px #4f46e5, 0 0 60px #4f46e5, 0 0 70px #4f46e5',
+                  'box-shadow': '0 0 10px #fff, 0 0 20px #4f46e5, 0 0 30px #4f46e5, 0 0 40px #4f46e5'
+                 },
+              },
+              'card-glow': {
+                'from': {
+                  'box-shadow': '0 0 15px -2px #8a42f4, inset 0 0 4px -1px #8a42f4'
+                },
+                'to': {
+                  'box-shadow': '0 0 25px -2px #4f46e5, inset 0 0 8px -1px #4f46e5'
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg text-brand-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
