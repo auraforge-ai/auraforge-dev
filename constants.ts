@@ -1,4 +1,3 @@
-
 import { Project } from './types';
 
 export const NAV_LINKS = [
@@ -44,6 +43,13 @@ export const PROJECTS: Project[] = [
     description: 'An AI-powered workflow automation tool designed to streamline complex business processes and enhance productivity.',
     imageUrl: 'https://picsum.photos/seed/cognitive-flow/800/600',
     projectUrl: '#',
+    isLive: false,
+  },
+  {
+    title: 'Distillify',
+    description: 'An AI-powered content distiller that transforms long articles and videos into quick, easy-to-digest summaries, helping you conquer information overload and learn faster.',
+    imageUrl: 'https://picsum.photos/seed/distill-ai/800/600',
+    projectUrl: 'https://distillify-94149386363.us-west1.run.app',
     isLive: false,
   },
 ];

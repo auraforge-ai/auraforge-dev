@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PROJECTS } from '../constants';
 import { Project } from '../types';
@@ -33,6 +32,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onShowcaseClick }) =
             View Project
           </a>
         )
+      ) : project.projectUrl && project.projectUrl !== '#' ? (
+        <a 
+          href={project.projectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 text-sm bg-brand-secondary text-white font-semibold rounded-md shadow-md shadow-brand-secondary/30 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 hover:bg-brand-primary hover:scale-105"
+        >
+          View Landing Page
+        </a>
       ) : (
         <button disabled className="inline-block px-4 py-2 text-sm bg-gray-700 text-brand-text-muted font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 cursor-not-allowed">
           In Development
